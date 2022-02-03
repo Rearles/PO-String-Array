@@ -9,7 +9,7 @@ namespace PO_String_Array
 {
     public class FilterArray
     {
-        public static ArrayList Filter(ArrayList arr)
+        public ArrayList Filter(ArrayList arr)
         {
             ArrayList array = new ArrayList();
             foreach (object o in arr)
@@ -20,6 +20,22 @@ namespace PO_String_Array
                 }
             }
             return array;
+        }
+        public void Print(ArrayList start, ArrayList end, string test)
+        {
+            Console.WriteLine("");
+            Console.WriteLine(test);
+            Console.WriteLine("Original Array");
+            foreach (object o in start)
+            {
+                Console.Write(o.ToString() + " ");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Filtered Array");
+            foreach (object o in end)
+            {
+                Console.Write(o.ToString() + " ");
+            }
         }
     }
 }
